@@ -47,14 +47,24 @@
 
     @media (max-width: 640px) {
         padding: 40px 0;
+        height: auto;
+
+        .container {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .infos-bar {
+            margin: 0;
+        }
 
         &__logo {
-            height: 40px;
+            height: 65px;
         }
 
         &__text {
-            font-size: 22px;
-            line-height: 24px;
+            font-size: 26px;
+            line-height: 30px;
             margin: 24px 0;
         }
     }
