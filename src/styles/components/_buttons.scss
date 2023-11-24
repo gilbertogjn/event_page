@@ -1,0 +1,28 @@
+@use '../vars';
+
+.button {
+    padding: 12px;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    white-space: nowrap;
+    display: block;
+    margin-top: 18px;
+    border-radius: 16px;
+
+    &--primary {
+        color: vars.$textColor;
+        background-color: vars.$pink;
+    }
+
+    @media (max-width: 640px) {
+        display: block;
+        width: 100%;
+    }
+
+    @media (max-width: 1024px) {
+        display: flex;
+        align-items: center;
+    }
+}

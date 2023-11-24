@@ -1,0 +1,80 @@
+@use '../vars';
+
+.infos-bar {
+    background-color: vars.$textColor;
+    padding: 44px;
+    display: block;
+    border-radius: 16px;
+    background-image: linear-gradient(vars.$blue1, vars.$blue2);
+    margin-left: 22px;
+
+    &__form {   
+
+        label, 
+        input, 
+        textarea {
+            display: block;
+            color: vars.$textColor;
+            width: 100%;
+        }
+
+        label {
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+
+        input {
+            padding: 10px;
+            border-radius: 16px;
+            margin-bottom: 18px;
+            border: 1px solid silver;
+        }
+
+        textarea {
+            border-radius: 16px;
+            border: 1px solid silver;
+            padding: 10px;
+            height: 150px;
+        }
+
+        a {
+            display: block;
+        }
+    }
+
+    &__infos {
+        display: flex;
+        gap: 40px;
+        margin-bottom: 26px;
+
+        &__item {
+            font-size: 14px;
+            color: vars.$textColor;
+
+
+            b {
+                font-size: 18px;
+                display: block;
+                color: vars.$textColor;
+            }
+        }
+    }
+
+    @media (max-width: 640px) {
+        display: block;
+
+        &__infos {
+            display: block;
+
+            &__item {
+                margin-bottom: 24px;
+            }
+        }
+    }
+
+    @media (max-width: 1024px) {
+        &__info {
+            gap: 16px;
+        }
+    }
+}
